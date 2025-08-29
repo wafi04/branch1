@@ -1,23 +1,12 @@
-export type ProductWithProvider = {
-  productId: number;
-  productName: string;
-  productHargaModal: number;
-  productMainProvider: number;
-  productIsActive: boolean;
-  productCode: string;
-  updatedAt: string;
-  providers : ProviderData[]
-};
-
-export type ProviderData = {
-  providerId: number;
-  providerName: string;
-  hargaModal: number;
-  isActive: boolean;
-  rolePrices : RolePrices[]
-};
-
-export type RolePrices = {
-  roleName: string;
-  price: number;
-};
+export type ProductData = {
+  BranchID: number 
+created_at: string
+hargaJual: number
+hargaModal: number
+id : number
+isActive : boolean
+marginValue :  number
+productID : number
+typeHarga: string
+updated_at: string 
+}

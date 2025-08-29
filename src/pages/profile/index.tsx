@@ -1,0 +1,1 @@
+export {default} from "@/shared/features/profile/pages/index"

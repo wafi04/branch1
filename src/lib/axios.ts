@@ -18,8 +18,8 @@ export class Api {
       baseURL: "http://localhost:9000/api/v1",
       withCredentials: true,
       headers: {
-        branchname: "utama",
-        branchcode: "b246285b-d9ed-4eca-afbd-ad86b284c5b2",
+        branchname: process.env.NEXT_PUBLIC_BRANCH_NAME,
+        branchcode: process.env.NEXT_PUBLIC_BRANCH_CODE
       },
     });
 

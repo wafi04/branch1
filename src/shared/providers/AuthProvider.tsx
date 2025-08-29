@@ -15,11 +15,11 @@ export function AuthInitProvider({ children }: { children: ReactNode }) {
     setIsLoading(isLoading);
 
     if (user) {
-      login(user); // ✅ Simpan user ke Zustand
+      login(user);
     }
 
     if (error) {
-      logout(); // ❌ Jika error (unauthorized), logout
+      logout(); 
     }
   }, [user, isLoading, error, login, logout, setIsLoading]);
 
